@@ -6,24 +6,168 @@
 		<meta name="description" content="Site pessoal de Willian Scaquett">
 		<title>Willian Scaquett</title>
 		<link type="text/css" rel="stylesheet" href="css/estilos.css">
+		<link type="text/css" rel="stylesheet" href="css/caixas.css">
+		<link type="text/css" rel="stylesheet" href="bibliotecas/fancybox/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" href="bibliotecas/fancybox/helpers/jquery.fancybox-buttons.css">
+		<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 		<link rel="icon" href="imagens/icon.ico">
 	</head>
 	<body>
-		<center>
-			<h1>Bem-vindo</h1>
-			<hr>
-			<br>
-			<a href="https://www.linkedin.com/in/willian-s-a47392124/" target="_blank"> <img src="imagens/willianscaquett.jpg" max-width=100%></a>
-			<p>Meu nome é Willian Scaquett. Sou estudante de programação.</p>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br><br><br><br><br><br>
-			<hr>
-			<footer><p><b>Contato:</b> willian.scaquett@etec.sp.gov.br</p></footer>
-		</center>
+		<header class="fundoAzulEscuro limpa" id="topo">
+			<div class="conteudo">
+				<div class="caixa-g-4">
+					<form name="busca" method="post" class="formularioBusca">
+						<input type="search" name="s" placeholder="BUSCAR">
+						<input class="botaoBusca" type="submit" value="">
+					</form>
+				</div>
+				<div class="caixa-g-4">
+					<div class="logo">	
+						<a href="index.html" title="Página Inicial"><img src="imagens/logo.png"></a>
+					</div>
+				</div>
+				<div class="caixa-g-4">
+					<div class="caixa">
+						<nav>
+							<div class="botaoMenu">
+							</div>
+							<ul>
+								<li><p>Navegação</p></li>
+								<li>	
+									<ul>
+										<li><a href="#perfil" class="scrollSuave">Informações pessoais</a>
+										<li><a href="#formacao" class="scrollSuave">Formação</a></li>
+										<li><a href="#experiencia" class="scrollSuave">Experiência</a></li>
+										<li><a href="#cursos" class="scrollSuave">Cursos complementares</a></li>
+									</ul>
+								<li>
+								<li><p>Redes sociais</p>
+									<ul>
+										<li>
+										<a href="https://www.linkedin.com/in/willian-s-a47392124/">LinkedIn</a>
+										</li>
+										<li>
+											<a href="https://github.com/scaquett">GitHub</a>	
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="fundoAzulEscuro limpa" id="perfil">
+			<div class="conteudo info">
+				<div class="caixa-g-3 caixa-m-3 caixa-p-6">
+					<img src="imagens/willianscaquett.jpg">
+				</div>
+				<h1>Willian Scaquett</h1>	
+				<p>Brasileiro, nascido em 18 de setembro de 2000, em Garça, município de São Paulo. Atualmente vive em Marília/SP e estuda programação, tanto voltada para desktop, quanto para web.</p>
+			</div>
+		</section>
+			
+		<section class="fundoAzulEscuro limpa" id="formacao">
+			<div class="conteudo info">
+				<h2>Formação</h2>	
+				<ul>
+					<li>Técnico em Informática, Etec Antônio Devisate - Marília/SP, concluído em 2017.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="fundoAzulEscuro limpa" id="experiencia">
+			<div class="conteudo info">
+				<h2>Experiência</h2>	
+				<ul>
+					<li><b>2016-2017 – Cuca Fresca Informática</b><br>
+						Cargo: Menor aprendiz.<br>
+						Principais atividades: Atendimento ao cliente e suporte técnico.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="fundoAzulEscuro limpa" id="cursos">
+			<div class="conteudo info">
+				<h2>Cursos complementares</h2>	
+				<ul>
+					<li>Git e GitHub para iniciantes, <a href="www.udemy.com" alt="udemy" title="Udemy">Udemy</a>, 2 horas (2017).</li>
+					<li>Criando Páginas Web com o GitHub Pages, <a href="www.udemy.com" alt="udemy" title="Udemy">Udemy</a>, 0,5 hora (2017).</li>
+					<li>HTML 5, <a href="www.udemy.com" alt="udemy" title="Udemy">Udemy</a>, 3,5 hora (2017).</li>
+					<li>Curso de Manutenção e Montagem de Computadores, Flexcomp – Marília/SP, 4 meses (2015).</li>
+					<li>Espanhol, Centro de Estudo de Línguas - Marília/SP, 3 anos (concluido em 2015).</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="fundoAzulEscuro limpa">
+			<div class="conteudo galeria">
+				<p>Essa página foi construida com as seguintes ferramentas:</p>
+				<div class="caixa-g-3 caixa-m-3 caixa-p-6">
+					<a class="fancybox" href="imagens/html5.png" data-fancybox-group="gallery" title="HTML5 (Hypertext Markup Language, versão 5) é uma linguagem para estruturação e apresentação de conteúdo para World Wide Web (WWW), ou seja, a internet.">
+					<img src="imagens/html5.png" alt="html5" title="HTML 5"></a>
+				</div>
+				<div class="caixa-g-3 caixa-m-3 caixa-p-6">
+					<a class="fancybox" href="imagens/css3.png" data-fancybox-group="gallery" title="CSS3 é a segunda mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), onde se define estilos para páginas web com efeitos de transição, imagem, e outros, que dão um estilo novo às páginas Web 2.0 em todos os aspectos de design do layout.">
+					<img src="imagens/css3.png" alt="css3" title="CSS 3"></a>
+				</div>
+				<div class="caixa-g-3 caixa-m-3 caixa-p-6">
+					<a class="fancybox" href="imagens/javascript.png" data-fancybox-group="gallery" title="JavaScript é uma linguagem de programação baseada em scripts e padronizada pela ECMA International (associação especializada na padronização de sistemas de informação).">
+					<img src="imagens/javascript.png" alt="javascript" title="Javascript"></a>
+				</div>
+				<div class="caixa-g-3 caixa-m-3 caixa-p-6">
+					<a class="fancybox" href="imagens/github.png" data-fancybox-group="gallery" title="GitHub é uma plataforma de hospedagem de código com controle de versão e colaboração. Ele permite que pessoas trabalhem juntas em projetos de qualquer lugar. É uma rede social ou uma fábrica social de software, que armazena e promove milhares de projetos, para as mais diversas finalidades. O GitHub usa o sistema de versionamento de projeto conhecido como Git.">
+					<img src="imagens/github.png" alt="github" title="GitHub"></a>
+				</div>
+			</div>
+		</section>
+
+		<div class="fundoBranco">
+			<footer class="conteudo limpa">
+				<article class="caixa-g-6 caixa-m-6">
+					<div class="caixa">
+						<h4>Sobre o site</h4>
+						<ul>
+							<li>
+								<span class="icones iconeGit">
+									<a href="https://github.com/scaquett/scaquett.github.io" title="GitHub"><p>Repositório</p></a>
+								</span>
+							</li>
+							<li>
+								<span class="icones iconeGitHub">
+									<a href="pages.github.com" title="GitHub Pages"><p>Hospedagem</p></a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article class="caixa-g-6 caixa-m-6">
+					<div class="caixa">
+						<h4>Contato</h4>
+						<ul>
+							<li>
+								<span class="icones iconeEmail">
+									<p>willian.scaquett@etec.sp.gov.br</p>
+								</span>
+							</li>
+							<li>
+								<span class="icones iconeWpp">
+									<p>+55 (14) 99143-9667</p>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</footer>
+
+			<a href="#topo" class="scrollSuave voltarTopo" id="voltarTopo"></a>
+
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/funcoes.js"></script>
+		<script src="bibliotecas/fancybox/jquery.fancybox.js"></script>
+		<script type="text/javascript" src="bibliotecas/fancybox/helpers/jquery.fancybox-buttons.js"></script>
 	</body>
 </html>

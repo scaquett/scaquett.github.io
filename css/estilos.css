@@ -1,17 +1,312 @@
-body{
-	background-color: #00001A;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+	font-size: 100%;
+	text-decoration: none;
+	text-align: center;
+	list-style: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-h1 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	color: #FFFFFF;
+h1, h2, h3 {
+	font-size: 2.5em;
+	padding: 10px;
 }
 
 img {
-	max-width: 15%;
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 
-p {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+.logo {
+	margin: 0 auto;
+}
+
+header {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+.fundoAzulEscuro {
 	color: #FFFFFF;
+	background-color: #00001A;
+}
+
+.formularioBusca {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 32px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.formularioBusca input {
+	text-align: left;
+	text-indent: 5px;
+	height: 30px;
+	border: none;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 0;
+}
+
+
+.botaoBusca {
+	position: absolute;
+	right: 0;
+	top: 0px;
+	width: 26px;
+	height: 26px;
+	background-image: url(../imagens/busca.png);
+	background-size: 26px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder{
+	color: #00001A;
+	font-weight: bold;
+	font-size: 0.85em;
+	font-style: normal;	
+}
+
+::-moz-input-placeholder{
+	color: #00001A;
+	font-weight: bold;
+	font-size: 0.85em;
+	font-style: normal;	
+}
+
+nav ul {
+	position: fixed;
+	left: -100%;
+	top: 0;
+	width: 75%;
+	height: 100%;
+	min-width: 200px;
+	max-width: 320px;
+	background: #FFFFFF;
+	overflow: hidden;
+	overflow-y: auto;
+	color: #00001A;
+	z-index: 1;
+	box-shadow: 1px 0 1px #AFAFAF;
+}
+
+nav ul li {
+	position: relative;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+nav ul li a {
+	color: #00001A;
+	background-color: #FFFFFF;
+	display: block;
+	padding: 10px;
+}
+
+nav ul li p {
+	color: #00001A;
+	background-color: #FFFFFF;
+	display: block;
+	padding: 10px;
+}
+
+nav ul li ul {
+	position: relative;
+	margin: 0 auto;
+	width:  100%;
+	background-color: #FFFFFF;
+	color: #00001A;
+	padding: 10px;
+}
+
+nav ul li ul li a {
+	text-align: left;
+	color: #FFFFFF;
+	background-color: #00001A;
+	border: 1px solid #FFFFFF;
+}
+
+nav ul li ul li a:hover{
+	text-decoration: underline;
+}
+
+.botaoMenu{
+	width: 46px;
+	height: 46px;
+	float: right;
+	cursor: pointer;
+	background: #FFFFFF url(../imagens/menu.png) center no-repeat;
+	background-size: 22px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.botaoMenu.menuAtivo {
+	background-color: #BEBEBE; 
+}
+
+.botaoMenu:hover {
+	background-color: #D3D3D3;
+}
+
+.galeria {
+	border-top: 1px solid #FFFFFF;
+}
+
+.galeria img {
+	background-color: #FFFFFF;
+	padding: 5px;
+	height: 220px;
+	-webkit-filter:opacity(90%);
+	filter:opacity(90%);
+}
+
+.galeria img:hover{
+	-webkit-filter:opacity(100%);
+	filter:opacity(100%);	
+	cursor: pointer;
+}
+
+.galeria div {
+	padding: 15px;
+}
+
+
+
+footer {
+	font-size: 0.9em;
+}
+
+footer h4 {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	margin: 20px;
+	border-bottom: 1px solid #00001A;
+}
+
+footer ul {
+	text-indent: 10px;	
+}
+
+footer ul li {
+	 text-align: left;
+	 height: 40px;
+}
+
+.fundoBranco {
+	background-color: #FFFFFF;
+	color: #00001A;
+}
+
+footer ul li p {
+	color: #00001A;
+	white-space: nowrap;
+	margin-left: 20px;
+	margin-top: 3.5px;
+}
+
+footer ul li a p{
+	color: #00001A;
+	white-space: nowrap;
+	margin-left: 20px;
+	margin-top: 3.5px;
+}
+
+
+footer ul li a p:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.icones {
+	float: left;
+	margin-left: 25px;	
+	width: 28px;
+	height: 26px;
+	background-size: 22px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.iconeGitHub {
+	background-image: url(../imagens/icongithub.png);
+}
+.iconeGit {
+	background-image: url(../imagens/icongit.png);
+}
+.iconeEmail {
+	background-image: url(../imagens/iconemail.png);
+}
+.iconeWpp {
+	background-image: url(../imagens/iconwpp.png);
+}
+
+.info {
+	border-top: 1px solid #FFFFFF;
+}
+
+.info h1 {
+	text-align: left;
+	font-size: 1.5em;
+}
+
+.info h2 {
+	text-align: left;
+	font-size: 1.5em;
+}
+
+.info ul {
+	padding-left: 30px;
+}
+
+.info ul li {
+	text-align: left;
+	list-style-type: disc;
+}
+
+.info img {
+	background-color: #FFFFFF;
+	padding: 5px;
+	height: 220px;
+	cursor: pointer;
+}
+
+.info a {
+	color: #FFFFFF;
+}
+
+.info a:hover {
+	text-decoration: underline;
+}
+
+.info p {
+	text-align: left;
+}
+
+.info div {
+	padding: 15px;
+}
+
+.voltarTopo {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 47px;
+	height: 47px;
+	background-image: url(../imagens/icontopo.png);
+	background-size: 47px;
+	display: none;
 }
